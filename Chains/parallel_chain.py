@@ -32,7 +32,7 @@ parallel_chain = RunnableParallel({
 })
 
 merge_chain = prompt3 | model | parser
-
+ 
 chain = parallel_chain | merge_chain
 
 text = '''
